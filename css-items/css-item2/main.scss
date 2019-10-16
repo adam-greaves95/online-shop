@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+.container{
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+p{
+    font-size: .9em;
+    line-height: 1.2em;
+    color: white;
+}
+
+header{
+    background: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+.menu{
+    width: 30px;
+    height: 25px; 
+    margin-top: 3em;
+    margin-left: .5em;
+}
+
+.lwing{
+    width: 30px;
+    margin-bottom: 2em;
+}
+
+.logo{
+    width: 70px;
+}
+
+.rwing{
+    width: 30px;
+    margin-bottom: 2em;
+}
+
+.shoppingcart{
+    width: 20px;
+    height: 20px;
+    margin-top: 3em;
+    margin-right: 1em;
+}
+
+/* SCSS FOR SEARCH-BAR */
+
+.search-container{
+    display: none;
+}
+
+$ligth-blue: #45BE99;
+$search-icon-color: #fff;
+$search-icon-background: #45BE99;
+$input-color: #fff;
+$search-input-background: #45BE99;
+$box-shadow-color: #45BE99;
+
+$transition-duration: .5s;
+
+@mixin border-radius($radius-top-left, $radius-top-right, $radius-bottom-right, $radius-bottom-left){
+  -webkit-border-radius: $radius-top-left $radius-top-right $radius-bottom-right $radius-bottom-left;
+     -moz-border-radius: $radius-top-left $radius-top-right $radius-bottom-right $radius-bottom-left;
+          border-radius: $radius-top-left $radius-top-right $radius-bottom-right $radius-bottom-left;
+}
+
+@mixin transition($parameter, $duration){
+  -webkit-transition: $parameter $duration;
+     -moz-transition: $parameter $duration;
+          transition: $parameter $duration;
+}
+
+@mixin box-shadow($xShadow, $yShadow, $blur, $spreadDistance, $color){
+  -webkit-box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+     -moz-box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+       -o-box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+          box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=$blur);
+}
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search-container {
+    background: $search-icon-background;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    margin-left: 10%;
+    margin-top: 3em;
+    overflow: hidden;
+    @include box-shadow(0px, 0px, 3px, 0px, $box-shadow-color);
+    @include border-radius(5px, 5px, 5px, 5px);
+    @include transition(all, $transition-duration);
+
+    &:hover {
+      width: 300px;
+    }
+
+    &:hover .search-button{
+      @include border-radius(0px, 5px, 5px, 0px);
+    }
+
+    & input[type="text"]{
+      color: $input-color;
+      background: $search-input-background;
+      height: 25px;
+      width: 100%;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 0;
+      border: 0;
+      float: left;
+      @include border-radius(5px, 0px, 0px, 5px);
+      @include transition(all, $transition-duration);
+      
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $input-color;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $input-color;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $input-color;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $input-color;
+      }
+    }
+
+    &:hover input[type="text"]{
+      width: 90%;
+      padding: 0 0px;
+      margin-right: 0;
+    }
+
+    .magnify{
+        height: 20px;
+        margin-bottom: .6em;
+        margin-left: 1.2em;
+    }
+
+    .search-button{
+      color: $search-icon-color;
+      background: $search-icon-background;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 24px;
+      float: right;
+      @include transition(border-radius, 0s);
+
+
+      &:active {
+        color: darken($search-icon-color, 20%);
+        background: darken($search-icon-background, 2%);
+      }
+    }
+  }
+
+  
+
+/* END OF SCSS FOR SEARCH-BAR */
+$ligth-blue: #45BE99;
+$search-icon-color: #fff;
+$search-icon-background: #45BE99;
+$input-color: #fff;
+$search-input-background: #45BE99;
+$box-shadow-color: #45BE99;
+
+$transition-duration: .5s;
+
+@mixin border-radius($radius-top-left, $radius-top-right, $radius-bottom-right, $radius-bottom-left){
+  -webkit-border-radius: $radius-top-left $radius-top-right $radius-bottom-right $radius-bottom-left;
+     -moz-border-radius: $radius-top-left $radius-top-right $radius-bottom-right $radius-bottom-left;
+          border-radius: $radius-top-left $radius-top-right $radius-bottom-right $radius-bottom-left;
+}
+
+@mixin transition($parameter, $duration){
+  -webkit-transition: $parameter $duration;
+     -moz-transition: $parameter $duration;
+          transition: $parameter $duration;
+}
+
+@mixin box-shadow($xShadow, $yShadow, $blur, $spreadDistance, $color){
+  -webkit-box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+     -moz-box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+       -o-box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+          box-shadow: $xShadow $yShadow $blur $spreadDistance $color;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=$blur);
+}
+
+*,
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search-container2 {
+    background: $search-icon-background;
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    margin-left: 2%;
+    margin-top: -12%;;
+    overflow: hidden;
+    @include box-shadow(0px, 0px, 3px, 0px, $box-shadow-color);
+    @include border-radius(5px, 5px, 5px, 5px);
+    @include transition(all, $transition-duration);
+
+    &:hover {
+      width: 200px;
+    }
+
+    &:hover .search-button{
+      @include border-radius(0px, 5px, 5px, 0px);
+    }
+
+    & input[type="text"]{
+      color: $input-color;
+      background: $search-input-background;
+      height: 25px;
+      width: 100%;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 0;
+      border: 0;
+      float: left;
+      @include border-radius(5px, 0px, 0px, 5px);
+      @include transition(all, $transition-duration);
+      
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $input-color;
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $input-color;
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $input-color;
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $input-color;
+      }
+    }
+
+    &:hover input[type="text"]{
+      width: 70%;
+      padding: 0 .4em;
+      margin-right: 0;
+    }
+
+    .magnify{
+        height: 20px;
+        margin-bottom: .6em;
+        margin-left: 1.2em;
+    }
+
+    .search-button{
+      color: $search-icon-color;
+      background: $search-icon-background;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 24px;
+      float: right;
+      @include transition(border-radius, 0s);
+
+
+      &:active {
+        color: darken($search-icon-color, 20%);
+        background: darken($search-icon-background, 2%);
+      }
+    }
+  }
+
+
+
+   
+/* START OF SCSS FOR DROP-DOWN-LIST */
+
+
+
+.hide-mobile{
+    display: none;
+}
+
+
+nav ul {
+    margin-right: 40%;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: black;
+    height: 100%;
+    z-index: 7;
+    padding-top: 5em;
+
+}
+
+ul{
+    padding: 2em;
+}
+
+
+ul li{
+    color: white;
+    padding: .5em 0;
+    list-style-type: none;
+}
+
+ul li img{
+    padding: .7em 0;
+}
+
+nav ul li a{
+    color: white;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em 1em .1em;
+    background-color: black;
+
+}
+
+nav ul li a:hover{
+    background-color: black;
+    border: 2px solid #45BE99;
+}
+
+.exit-btn{
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img{
+    width: 16px;
+    cursor: pointer;
+}
+
+/* START OF SCSS FOR DROP-DOWN-LIST */
+
+body {
+    background-color: black;
+}
+
+h1 {
+  color: #45BE99;
+  font-style: bold;
+  font-style: italic;
+  margin-top: -3.5em;
+  margin-bottom: 3em;
+}
+
+.main {
+  float: left;
+  margin-top: 7em;
+  margin-left: 7em;
+}
+
+.main img {
+  width: 300px;
+  height: 300px;
+  margin-right: 5em;
+}
+
+.text {
+  text-align: left;
+  margin-top: 14em;
+  
+}
+
+.price {
+  margin-top: 2em;
+  font-style: bold;
+  color: #45BE99;
+}
+
+button {
+  margin-top: 2em;
+  padding: .5em;
+  background-color: black;
+  color: white;
+  border: 1px solid #45BE99;
+  border-radius: 7px;
+
+}
+
+.cart:hover {
+  background-color: #45BE99;
+  color: black;
+  font-style: bold;
+}
+
+.back {
+  border: 1px solid lightgrey;
+  float: left;
+  margin-left: 1em;
+}
+
+.back:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+
+
+
+@media only screen and (min-width: 500px){
+    
+    .search-container2{
+        margin-top: -5%;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 800px){
+
+    nav ul{
+        width: 40%;
+        margin-right: 60%;
+    }
+
+    
+
+    .search-container2{
+        margin-left: .6em;;
+    }
+}
+
+@media only screen and (min-width: 800px){
+
+    .search-container2{
+        width: 35px;
+        height: 30px;
+
+        
+    }
+
+    .magnify{
+        margin-bottom: .6em;
+        margin-right: .2em;
+    }
+
+    .menu{
+        width: 35px;
+        height: 30px;
+    }
+
+   
+
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+   
+
+    .search-container{
+        display: block;
+        width: 35px;
+        height: 30px; 
+        margin-left: 4em;;
+    }
+
+    .search-container2{
+        display: none;
+    }
+    
+    
+
+    nav ul{
+        width: 30%;
+        margin-right: 70%;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 1900px){
+
+    
+    .container{
+        padding: 0 0 0 2em;
+    }
+
+    .shoppingcart{
+        margin-right: 2em;
+    }
+    
+    
+
+}

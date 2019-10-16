@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="css-contact/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/menu.png" alt="menu" class="menu" id="menu">
+            </a>
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+         <div class="search-container">
+            <a href="#/search" class="search-button">
+              <i class="fa fa-search"><img src="images/magnify.svg" alt="magnify" class="magnify"> </i>
+            </a>
+            <input type="text" placeholder="Search">
+          </div>
+
+        <div class="center">
+            <img src="images/leftwing.png" alt="leftwing" class="lwing">
+            <img src="images/deerhead.png" alt="deerhead" class="logo">
+            <img src="images/rightwing.png" alt="rightwing" class="rwing"> 
+        </div>
+
+            <img src="images/shoppingcart.png" alt="shoppingcart" class="shoppingcart" data-toggle="modal" data-target="#cart">
+
+        </header>
+
+        <div class="wrapper">
+            <div class="search-container2">
+            <a href="#/search" class="search-button">
+              <i class="fa fa-search"><img src="images/magnify.svg" alt="magnify" class="magnify"> </i>
+            </a>
+            <input type="text" placeholder="Search">
+          </div>
+        </div>
+
+        <div class="text">
+            
+            <h3>Got A Question?</h3>
+            <h2>Contact AKLVTY</h2>
+            <h4>We're here to help and answer any questions you may have. We look forward to hearing from you. </h4>
+
+
+           </div>
+
+           <div class="block">
+
+            <h5><strong>How can we help?</strong></h5>
+            <p class="top-text">Please select a topic below related to your inquiry. If what you are looking for is not listed below, please may you fill out our contact form and we will get in Contact with you as soon as possible.
+
+            <br><br>Please note email response times are generally around 24hrs as all queries are handled by a small local team.  </p>
+            <div class="links">
+            <a href="#"><h6>Issues With Shipping</h6></a>
+            <p>Configure Shipping Destination</p>
+            <a href="#"><h6>Request whole sale for store</h6></a>
+            <p>Let us know about your interest in using our clothes in one of your shops by filling in the contact form with a brief message of what you are looking to accomplish. </p>
+            <a href="#"><h6>Return</h6></a>
+            <p>Having an issue with an already delivered product? Let us know and an advisor will in contact shortly</p>
+            </div>
+        
+            </div>
+
+        
+            <div class="form">
+
+                        <form action="action_page.php">
+
+                                <label for="name">Name ( Required )</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+                            
+                                <label for="email">Email Address ( Required )</label>
+                                <input type="text" id="email" name="email" placeholder="Your email..">
+
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="subject..">
+            
+                                <label for="message">Message ( Required )</label>
+                                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                            
+                                <input type="submit" value="Submit">
+
+                                
+
+                                
+                            
+                              </form>
+
+
+
+                
+            </div>
+
+        
+
+
+
+     </div>
+
+     <script>
+
+            var menu = document.getElementById('menu');
+                    var nav = document.getElementById('nav');
+                    var exit = document.getElementById('exit');
+            
+                    menu.addEventListener('click', function(e){
+                        nav.classList.toggle('hide-mobile');
+                        e.preventDeFault();
+                    });
+            
+                    exit.addEventListener('click', function(e){
+                        nav.classList.add('hide-mobile');
+                        e.preventDeFault();
+                    });
+    
+    </script>
+
+    <script type="text/javascript" src="cart.js"></script>
+
+        
+</body>
+</html>

@@ -1,0 +1,866 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.container {
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  background: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: .9em;
+  line-height: 1.2em;
+  color: white;
+}
+
+header {
+  background: black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+.menu {
+  width: 30px;
+  height: 25px;
+  margin-top: 3em;
+  margin-left: .5em;
+}
+
+.lwing {
+  width: 30px;
+  margin-bottom: 2em;
+}
+
+.logo {
+  width: 70px;
+}
+
+.rwing {
+  width: 30px;
+  margin-bottom: 2em;
+}
+
+.shoppingcart {
+  width: 20px;
+  height: 20px;
+  margin-top: 3em;
+  margin-right: 1em;
+}
+
+/* SCSS FOR SEARCH-BAR */
+.search-container {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search-container {
+  background: #45BE99;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  margin-left: 10%;
+  margin-top: 3em;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 3px 0px #45BE99;
+  -o-box-shadow: 0px 0px 3px 0px #45BE99;
+  box-shadow: 0px 0px 3px 0px #45BE99;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=$blur);
+  border-radius: 5px 5px 5px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search-container:hover {
+  width: 300px;
+}
+
+.search-container:hover .search-button {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.search-container input[type="text"] {
+  color: #fff;
+  background: #45BE99;
+  height: 25px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  border: 0;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search-container input[type="text"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+
+.search-container input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+.search-container input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+
+.search-container input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+.search-container:hover input[type="text"] {
+  width: 90%;
+  padding: 0 0px;
+  margin-right: 0;
+}
+
+.search-container .magnify {
+  height: 20px;
+  margin-bottom: .6em;
+  margin-left: 1.2em;
+}
+
+.search-container .search-button {
+  color: #fff;
+  background: #45BE99;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  float: right;
+  -webkit-transition: border-radius 0s;
+  transition: border-radius 0s;
+}
+
+.search-container .search-button:active {
+  color: #cccccc;
+  background: #40b894;
+}
+
+/* END OF SCSS FOR SEARCH-BAR */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search-container2 {
+  background: #45BE99;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  margin-left: 2%;
+  margin-top: -12%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 3px 0px #45BE99;
+  -o-box-shadow: 0px 0px 3px 0px #45BE99;
+  box-shadow: 0px 0px 3px 0px #45BE99;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=$color, Direction=NaN, Strength=$blur);
+  border-radius: 5px 5px 5px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search-container2:hover {
+  width: 200px;
+}
+
+.search-container2:hover .search-button {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.search-container2 input[type="text"] {
+  color: #fff;
+  background: #45BE99;
+  height: 25px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0;
+  border: 0;
+  float: left;
+  border-radius: 5px 0px 0px 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.search-container2 input[type="text"]::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+}
+
+.search-container2 input[type="text"]::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+.search-container2 input[type="text"]:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+}
+
+.search-container2 input[type="text"]:-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+}
+
+.search-container2:hover input[type="text"] {
+  width: 70%;
+  padding: 0 .4em;
+  margin-right: 0;
+}
+
+.search-container2 .magnify {
+  height: 20px;
+  margin-bottom: .6em;
+  margin-left: 1.2em;
+}
+
+.search-container2 .search-button {
+  color: #fff;
+  background: #45BE99;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 24px;
+  float: right;
+  -webkit-transition: border-radius 0s;
+  transition: border-radius 0s;
+}
+
+.search-container2 .search-button:active {
+  color: #cccccc;
+  background: #40b894;
+}
+
+/* START OF SCSS FOR DROP-DOWN-LIST */
+.hide-mobile {
+  display: none;
+}
+
+nav ul {
+  margin-right: 40%;
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: black;
+  height: 100%;
+  z-index: 7;
+  padding-top: 5em;
+}
+
+ul {
+  padding: 2em;
+}
+
+ul li {
+  color: white;
+  padding: .5em 0;
+  list-style-type: none;
+}
+
+ul li img {
+  padding: .7em 0;
+}
+
+nav ul li a {
+  color: white;
+  font-style: italic;
+  font-weight: 300;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1em 2em 1em .1em;
+  background-color: black;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  border: 2px solid #45BE99;
+}
+
+.exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+.exit-btn img {
+  width: 16px;
+  cursor: pointer;
+}
+
+/* START OF SCSS FOR DROP-DOWN-LIST */
+.wrapper {
+  margin: 0;
+  padding: 3em 0;
+  margin-top: 0;
+  width: 100%;
+  height: 70em;
+  background: url(../images/bg-01.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 280px;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3em;
+}
+
+.line1 {
+  width: 30px;
+  height: 3px;
+  margin-left: 50px;
+  margin-top: 1em;
+}
+
+.line2 {
+  width: 30px;
+  height: 3px;
+  margin-right: 50px;
+  margin-top: 1em;
+}
+
+.text h1 {
+  font-size: 1.7em;
+  color: white;
+  margin-left: -50%;
+  margin-right: -50%;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: .6em;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 13px;
+  text-align: center;
+  margin-top: 3.2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 5em;
+}
+
+.button {
+  float: left;
+  margin-left: 2%;
+  margin-top: 15em;
+}
+
+button {
+  background-color: black;
+  border: 3px solid #45BE99;
+  height: 2.7em;
+  width: 7em;
+  color: white;
+  font-style: bold;
+  font-weight: 300;
+  line-height: 13px;
+  text-align: center;
+  font-size: .7em;
+  padding: .8em;
+}
+
+.button1 {
+  position: absolute;
+  margin-top: -3em;
+  padding-bottom: 2em;
+}
+
+.button2 {
+  position: absolute;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.model {
+  height: 15em;
+  float: right;
+  margin-right: 2em;
+}
+
+.circle {
+  height: 13em;
+  width: 13em;
+  background-image: -webkit-gradient(linear, left top, right top, from(#f77ab7), color-stop(#d77bbc), color-stop(#b67bb9), color-stop(#9779b1), to(#7d75a3));
+  background-image: linear-gradient(to right, #f77ab7, #d77bbc, #b67bb9, #9779b1, #7d75a3);
+  border-radius: 50%;
+  float: right;
+  margin-top: 15%;
+  margin-right: 2%;
+}
+
+@media only screen and (min-width: 500px) {
+  .search-container2 {
+    margin-top: -5%;
+  }
+  .line1 {
+    margin-left: 22%;
+  }
+  .line2 {
+    margin-right: 22%;
+  }
+  .button1 {
+    position: static;
+  }
+  .button2 {
+    position: static;
+    margin-left: 2em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    background-position-y: 220px;
+  }
+  .line1 {
+    margin-left: 27%;
+  }
+  .line2 {
+    margin-right: 27%;
+  }
+  .text {
+    margin-top: -6%;
+  }
+  button {
+    font-size: .9em;
+  }
+  .button1 {
+    height: 3em;
+    width: 7em;
+    margin-left: 1em;
+  }
+  .button2 {
+    height: 3em;
+    width: 7em;
+    margin-right: -4em;
+  }
+  .circle {
+    width: 16em;
+    height: 16em;
+    margin-top: 10%;
+  }
+  .model {
+    height: 17em;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .wrapper {
+    background-position-y: 260px;
+  }
+  .line1 {
+    margin-left: 31%;
+  }
+  .line2 {
+    margin-right: 31%;
+  }
+  .text p {
+    font-size: .8em;
+  }
+  .button {
+    margin-top: 50%;
+  }
+  .circle {
+    width: 19em;
+    height: 19em;
+    margin-top: 16%;
+  }
+  .model {
+    height: 21em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  nav ul {
+    width: 40%;
+    margin-right: 60%;
+  }
+  .wrapper {
+    background-position-y: 350px;
+  }
+  .text {
+    margin-top: 4em;
+  }
+  .text h1 {
+    font-size: 2em;
+  }
+  .text p {
+    font-size: 1em;
+    margin-top: 3em;
+  }
+  .button {
+    margin-top: 55%;
+  }
+  button {
+    font-size: 1.2em;
+  }
+  .button1 {
+    width: 7em;
+    height: 2em;
+    padding-top: 1em;
+  }
+  .button2 {
+    width: 7em;
+    height: 2em;
+    padding-top: 1em;
+  }
+  .circle {
+    height: 23em;
+    width: 23em;
+    margin-top: 23%;
+    margin-right: 2em;
+  }
+  .model {
+    height: 25em;
+    margin-top: 1em;
+  }
+  .search-container2 {
+    margin-left: .6em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .search-container2 {
+    width: 35px;
+    height: 30px;
+  }
+  .magnify {
+    margin-bottom: .6em;
+    margin-right: .2em;
+  }
+  .menu {
+    width: 35px;
+    height: 30px;
+  }
+  .line1 {
+    margin-left: 33%;
+  }
+  .line2 {
+    margin-right: 33%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .text p {
+    padding-right: 50%;
+    padding-left: 6%;
+    text-align: left;
+    position: relative;
+    top: 30px;
+  }
+  .wrapper {
+    background-position-y: 260px;
+  }
+  .circle {
+    height: 30em;
+    width: 30em;
+    margin-top: 15%;
+  }
+  .model {
+    height: 34em;
+  }
+  button {
+    font-size: 1.5em;
+  }
+  .button {
+    position: relative;
+    bottom: 4em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .text h1 {
+    font-size: 2.3em;
+  }
+  .line1 {
+    margin-top: 1.5em;
+  }
+  .line2 {
+    margin-top: 1.5em;
+  }
+  .text p {
+    top: 4em;
+    font-size: 1em;
+    line-height: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    background-position-y: 50px;
+    background: url(../images/BG1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 30px;
+    background-position-x: 50px;
+  }
+  .search-container {
+    display: block;
+    width: 35px;
+    height: 30px;
+    margin-left: 4em;
+  }
+  .search-container2 {
+    display: none;
+  }
+  .heading {
+    position: relative;
+    right: 32%;
+    top: 2em;
+  }
+  .text h1 {
+    font-size: 1.7em;
+  }
+  .line1 {
+    margin-left: 38%;
+    margin-top: 1em;
+  }
+  .line2 {
+    margin-right: 38%;
+    margin-top: 1em;
+  }
+  .text p {
+    font-size: .6em;
+    top: 10em;
+    left: 6em;
+  }
+  .circle {
+    height: 28em;
+    width: 28em;
+    margin-top: -5%;
+    margin-right: 12em;
+  }
+  .model {
+    height: 30em;
+    margin-top: 2em;
+  }
+  .button {
+    bottom: 22em;
+    left: 4em;
+  }
+  button {
+    font-size: 1em;
+  }
+  .button1 {
+    width: 8em;
+  }
+  .button2 {
+    width: 8em;
+  }
+  nav ul {
+    width: 30%;
+    margin-right: 70%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .wrapper {
+    background-position-y: 100px;
+    background-size: 100% 650px;
+  }
+  .text {
+    margin-top: 7em;
+  }
+  .heading {
+    margin-top: 3em;
+  }
+  .text h1 {
+    font-size: 1.9em;
+  }
+  .text p {
+    font-size: .9em;
+    top: 8em;
+    left: 1em;
+    margin-top: 0;
+  }
+  .button {
+    bottom: 25em;
+  }
+  .circle {
+    margin-top: -3.5em;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .button {
+    bottom: 28em;
+  }
+  .heading {
+    margin-top: -1em;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .text h1 {
+    font-size: 2.1em;
+  }
+  .line1 {
+    margin-left: 36em;
+  }
+  .line2 {
+    margin-right: 36em;
+  }
+  .text p {
+    left: 5em;
+  }
+  .button {
+    bottom: 31em;
+  }
+  .button1 {
+    width: 12em;
+  }
+  .model {
+    height: 33em;
+  }
+  .button2 {
+    width: 12em;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .line1 {
+    margin-left: 40em;
+  }
+  .line2 {
+    margin-right: 40em;
+  }
+  .circle {
+    height: 32em;
+    width: 32em;
+    margin-right: 17em;
+    margin-top: -6em;
+  }
+  .model {
+    height: 38em;
+  }
+  .wrapper {
+    background-size: 100% 700px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .wrapper {
+    background-size: 100% 800px;
+  }
+  .line1 {
+    margin-left: 43em;
+  }
+  .line2 {
+    margin-right: 43em;
+  }
+  .text p {
+    margin-left: 5em;
+  }
+  .button {
+    margin-left: 8em;
+  }
+  .circle {
+    height: 35em;
+    width: 35em;
+    margin-right: 19em;
+    margin-top: -3em;
+  }
+  .model {
+    height: 41em;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .wrapper {
+    background-size: 100% 900px;
+  }
+  .text h1 {
+    font-size: 2.4em;
+  }
+  .text p {
+    margin-top: 3em;
+  }
+  .line1 {
+    margin-left: 45em;
+    margin-top: 1.2em;
+  }
+  .line2 {
+    margin-right: 45em;
+    margin-top: 1.2em;
+  }
+  .circle {
+    margin-top: -1em;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .container {
+    padding: 0 0 0 2em;
+  }
+  .shoppingcart {
+    margin-right: 2em;
+  }
+  .line1 {
+    margin-left: 48em;
+  }
+  .line2 {
+    margin-right: 48em;
+  }
+  .heading {
+    margin-left: -2em;
+  }
+  .text h1 {
+    font-size: 1.6em;
+  }
+  .text p {
+    font-size: 1.2em;
+    margin-left: -2em;
+    margin-top: 0em;
+  }
+  .circle {
+    height: 39em;
+    width: 39em;
+    margin-right: 20em;
+    margin-top: -3em;
+  }
+  .model {
+    height: 44em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

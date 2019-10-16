@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+    <link rel="stylesheet" href="css-items/css-item3/main.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <nav>
+            <a href="#" class="hide-desktop">
+                <img src="images/menu.png" alt="menu" class="menu" id="menu">
+            </a>
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+         <div class="search-container">
+            <a href="#/search" class="search-button">
+              <i class="fa fa-search"><img src="images/magnify.svg" alt="magnify" class="magnify"> </i>
+            </a>
+            <input type="text" placeholder="Search">
+          </div>
+
+        <div class="center">
+            <img src="images/leftwing.png" alt="leftwing" class="lwing">
+            <img src="images/deerhead.png" alt="deerhead" class="logo">
+            <img src="images/rightwing.png" alt="rightwing" class="rwing"> 
+        </div>
+
+            <img src="images/shoppingcart.png" alt="shoppingcart" class="shoppingcart" data-toggle="modal" data-target="#cart">
+
+        </header>
+
+        <div class="wrapper">
+            <div class="search-container2">
+            <a href="#/search" class="search-button">
+              <i class="fa fa-search"><img src="images/magnify.svg" alt="magnify" class="magnify"> </i>
+            </a>
+            <input type="text" placeholder="Search">
+          </div>
+
+          
+    </div>
+
+        <a href="products.html"><button class="back">Go Back</button></a>
+
+        <div class="main">
+            <img src="images/shoe7.jpg" alt="Shoe" class="shoe">
+        </div>
+
+        <div class="text">
+        <h1>Vans Tops</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Rerum odit error molestiae earum minima praesentium nihil quas cum <br> minus molestias exercitationem, ea illum nulla eligendi. Ea eaque cupiditate quae veniam.</p>
+        <p class="price">R379.00-</p>
+        <button class="cart">Add To Cart</button>
+    </div>
+
+     </div>
+
+     <script>
+
+            var menu = document.getElementById('menu');
+                    var nav = document.getElementById('nav');
+                    var exit = document.getElementById('exit');
+            
+                    menu.addEventListener('click', function(e){
+                        nav.classList.toggle('hide-mobile');
+                        e.preventDeFault();
+                    });
+            
+                    exit.addEventListener('click', function(e){
+                        nav.classList.add('hide-mobile');
+                        e.preventDeFault();
+                    });
+    
+    </script>
+    
+    <script type="text/javascript" src="cart.js"></script>
+
+    
+</body>
+</html>

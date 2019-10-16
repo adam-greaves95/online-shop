@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping-Basket</title>
+    <link rel="stylesheet" href="css-cart/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Nav -->
+<header>
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+            <a href="#" class="hide-desktop">
+                <img src="images/menu.png" alt="menu" class="menu" id="menu">
+            </a>
+            <ul class="show-desktop hide-mobile" id="nav">
+                <li id="exit" class="exit-btn hide-desktop"><img src="images/exit.svg" alt="exit menu"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="center">
+                <img src="images/leftwing.png" alt="leftwing" class="lwing">
+                <img src="images/deerhead.png" alt="deerhead" class="logo">
+                <img src="images/rightwing.png" alt="rightwing" class="rwing"> 
+            </div>
+    
+                <img src="images/shoppingcart.png" alt="shoppingcart" class="shoppingcart" data-toggle="modal" data-target="#cart">
+
+        </nav>
+
+        
+
+
+    </header>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart" id="top-btn">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger" id="bottom-btn"
+            >Clear Cart</button></div>
+    </div>
+</nav>
+
+
+<!-- Main -->
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/shoe5.jpg" alt="shoe5">
+  <div class="card-block">
+    <h4 class="card-title">Vans Escorts</h4>
+    <p class="card-text">Price: R400.00</p>
+    <a href="#" data-name="escorts" data-price="400" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/shoe6.jpg" alt="shoe6">
+  <div class="card-block">
+    <h4 class="card-title">Vans Fit</h4>
+    <p class="card-text">Price: R500.00</p>
+    <a href="#" data-name="fit" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="images/shoe7.jpg" alt="shoe7">
+  <div class="card-block">
+    <h4 class="card-title">Vans Tops</h4>
+    <p class="card-text">Price: R375.00</p>
+    <a href="#" data-name="tops" data-price="375" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="images/shoe8.jpg" alt="shoe5">
+    <div class="card-block">
+      <h4 class="card-title">Vans Relay</h4>
+      <p class="card-text">Price: R700.00</p>
+      <a href="#" data-name="relay" data-price="700" class="add-to-cart btn btn-primary">Add to cart</a>
+    </div>
+  </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="images/shoe9.jpg" alt="shoe6">
+    <div class="card-block">
+      <h4 class="card-title">Vans Premium</h4>
+      <p class="card-text">Price: R650.00</p>
+      <a href="#" data-name="premium" data-price="650" class="add-to-cart btn btn-primary">Add to cart</a>
+    </div>
+  </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 20rem;">
+    <img class="card-img-top" src="images/shoe10.jpg" alt="shoe7">
+    <div class="card-block">
+      <h4 class="card-title">Vans Street</h4>
+      <p class="card-text">Price: R599</p>
+      <a href="#" data-name="street" data-price="599" class="add-to-cart btn btn-primary">Add to cart</a>
+    </div>
+  </div>
+        </div>
+      </div>
+</div>
+
+  
+ <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: R<span class="total-cart"></span></div>
+      </div>
+      <form>
+            Promo Code: <br> <input type="text" name="promo-code" id="promo"> 
+            <button id="promo" onclick="clickDiscount()">Submit</button>
+      </form>
+      <div class="order"></div>
+      <div class="upper-footer">
+            <button type="button" data-name="collect" data-price="0" class="add-to-cart btn btn-primary">Collect</button>
+            <button type="button" data-name="shipping" data-price="120" class="add-to-cart btn btn-primary">Shipping</button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="randomWholeNum()">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<script>
+
+    var menu = document.getElementById('menu');
+           var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+    
+            menu.addEventListener('click', function(e){
+                nav.classList.toggle('hide-mobile');
+                e.preventDeFault();
+            });
+    
+            exit.addEventListener('click', function(e){
+                nav.classList.add('hide-mobile');
+                e.preventDeFault();
+            });
+
+</script>
+
+    <script type="text/javascript" src="cart.js"></script>
+    
+</body>
+</html>
